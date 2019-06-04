@@ -1,4 +1,3 @@
-* {box-sizing: border-box;}
 
 @font-face {
   font-family: "RalewayRegular";
@@ -14,12 +13,70 @@ body {
   margin: 0;
   font-family: "RalewayRegular";
 }
-
+.poster{
+  background-image: url('/src/assets/images/fon.png');
+  overflow: hidden;
+  background-position: bottom; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 720px;
+}
+.uper{
+  margin: 0 auto;
+  margin-top: 200px;
+  height: 500px;
+  width: 60%;
+  text-align: center;
+}
+.uper p.title1{
+  font-size: 300%;
+  font-weight: bold;
+}
+.uper p.title2{
+  font-size: 100%;
+  
+}
+button.start_search:hover {background-color: red}
+.searcher
+{
+  box-shadow: 1 4px #999;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px; 
+}
+.uper
+.searcher input{
+  height: 65px;
+  width: 60%;
+  border: none;
+  padding: 0px;
+}
+.uper
+.searcher .drop{
+  background-color: red;
+  height: 65px;
+  width: 20%;
+  float: left;
+}
+.uper
+.searcher .start_search
+{
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px; 
+  background-color: #00afbd;
+  height: 65px;
+  width: 20%;
+  float: right;
+}
+.uper 
+.title1 .green_title{
+  color:green;
+}
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
-  position: fixed;
+  background-color:#f1f1f1;
+  padding: 15px 10px;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -38,7 +95,7 @@ body {
 .header img.logo {
   margin-left: 5%;
   overflow: auto;
-  height: 70px;
+  height: 50px;
 }
 
 .header a:hover {
@@ -80,3 +137,4 @@ body {
   {
       height: 1000px;
   }
+  
