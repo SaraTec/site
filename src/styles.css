@@ -13,13 +13,76 @@ body {
   margin: 0;
   font-family: "RalewayRegular";
 }
+.img_gallary{
+  align-items: flex-start;
+  display: flex;
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.responsive {
+  padding: 0 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 25.99999%;
+  margin: 25px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.gallery_block{
+  padding-top: 50px;
+  background-color:rgb(230,230,230); 
+}
 .poster{
-  background-image: url('/src/assets/images/fon.png');
+  background-image: url('assets/images/fon.png');
   overflow: hidden;
   background-position: bottom; 
   background-repeat: no-repeat; 
   background-size: cover; 
   height: 720px;
+}
+.header_gallery
+{
+  margin: 0 auto;
+  height:100px;
+  width: 60%;
+  text-align: center;
 }
 .uper{
   margin: 0 auto;
@@ -66,7 +129,44 @@ button.start_search:hover {background-color: red}
   background-color: #00afbd;
   height: 65px;
   width: 20%;
+  font-size: 80%;
   float: right;
+  color: white;
+}
+
+.down
+{
+  height: 10%;
+  width: 20%;
+  margin: -5% auto;
+}
+.down
+.plate
+{
+  opacity: 0.8;
+  background:  white;
+  height: 100%;
+  width: 171px;
+  font-size: 80%;
+  /*margin-left: 11%;*/
+  /*float: right;*/
+  border-radius: 10px;
+}
+
+img.img_down
+{
+  margin:15%  auto; 
+  margin-left:20%; 
+  float: left;
+  height:30% ;
+}
+.tex_down
+{
+  margin:17%  auto;
+  margin-right:10%;
+  color: green;
+  float: right;
+  font-size: 110%;
 }
 .uper 
 .title1 .green_title{
@@ -74,7 +174,7 @@ button.start_search:hover {background-color: red}
 }
 .header {
   overflow: hidden;
-  background-color:#f1f1f1;
+  background-color:rgb(230,230,230);
   padding: 15px 10px;
   position: sticky;
   top: 0;

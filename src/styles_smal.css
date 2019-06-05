@@ -1,0 +1,11 @@
+@media screen and (max-width: 1735px) {
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    .searcher
+    {
+        width: 395px;
+    }
+}
