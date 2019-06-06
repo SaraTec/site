@@ -8,13 +8,12 @@
   font-style: normal;
   font-weight: normal;
 }
-
 body { 
   margin: 0;
   font-family: "RalewayRegular";
 }
 .img_gallary{
-  align-items: flex-start;
+
   display: flex;
   flex-grow: 1;
   margin: 0 auto;
@@ -22,26 +21,46 @@ body {
   padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
+  display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
 }
 div.gallery {
-  border: 1px solid #ccc;
+  
+  padding: 0 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 250px;
+  height: 300px;
+  margin: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 240px;
+  max-width: 100%;
 }
 
 div.desc {
-  padding: 15px;
-  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: left;
 }
-
-
+a:link {
+  color: #4DADBB;
+}
+a:visited {
+  color: #4DADBB;
+}
 
 .responsive {
   padding: 0 6px;
@@ -53,14 +72,14 @@ div.desc {
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
+  .gallery {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
+  .gallery{
     width: 100%;
   }
 }
@@ -68,6 +87,7 @@ div.desc {
 .gallery_block{
   padding-top: 50px;
   background-color:rgb(230,230,230); 
+  padding-bottom: 25px;
 }
 .poster{
   background-image: url('assets/images/fon.png');
@@ -80,7 +100,7 @@ div.desc {
 .header_gallery
 {
   margin: 0 auto;
-  height:100px;
+  height:70px;
   width: 60%;
   text-align: center;
 }
@@ -137,12 +157,17 @@ button.start_search:hover {background-color: red}
 .down
 {
   height: 10%;
-  width: 20%;
+  width: 380px;
   margin: -5% auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  z-index: 1;
 }
 .down
 .plate
 {
+  
   opacity: 0.8;
   background:  white;
   height: 100%;
@@ -173,6 +198,7 @@ img.img_down
   color:green;
 }
 .header {
+  z-index: 2;
   overflow: hidden;
   background-color:rgb(230,230,230);
   padding: 15px 10px;
