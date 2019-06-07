@@ -8,10 +8,27 @@
   <title>Document</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./styles_smal.css">
+  <link rel="stylesheet" href="./styles_carusel.css">
+  <link rel="stylesheet" href="./styles_burger.css">
+
   <script src="/scrip.js"></script>
 </head>
 
 <body>
+    <div class="wrapper">
+        <input type="checkbox" id="check-menu">
+        <label style="position: sticky;" for="check-menu"><img class="logo_burger" src="assets/images/logo.png"></label>
+        <div class="burger-line first"></div>
+        <div class="burger-line second"></div>
+        <div class="burger-line third"></div>
+        <div class="burger-line fourth"></div>
+        <nav class="main-menu">
+            <a href="#">ALL PRODUCTS</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">LOG IN</a>
+            <a href="#">GIGN UP</a>
+        </nav>
+    </div>
   <div class="header">
     <img class="logo" src="assets/images/logo.png">
     <div class="header-right">
@@ -32,9 +49,10 @@
       </p>
 
       <div class="searcher">
-        <div class="drop"></div>
-        <button class="start_search">START SERCHING</button>
+        <label class="drop"></label>
         <input type="text" name="search">
+        <button class="start_search">START SERCHING</button>
+        
       </div>
     </div>
     <div class="down">
@@ -88,8 +106,87 @@
       <p><b><a href="http://htmlbook.ru/css/text-decoration" class="all_prod">All products</a></b></p>
     </div>
   </div>
-  <div>
+  <div class="block-slider">
+    <p style="text-align: center;
+    color:white; font-size:25px; margin:0;">Testimonials</p>
+    <p style="text-align: center;
+    color:white; font-size:15px; margin:10px;">What our custumers told about us</p>
+    <div class="slider">
+      <button id="prev" onclick='prev()'>←</button>
+      <div id="carousel">
 
+        <div class="prev">
+          <img class="icon" src="/assets/images/00115b408e4b0a1da5a607.jpg">
+          <p class="many_text">
+            The Chernobyl disaster was an accident at the Chernobyl Nuclear Power Plant on April 26, 1986 at 01:23 a.m.,
+            consisting of an explosion at the plant and subsequent radioactive contamination of the surrounding
+            geographic
+            area.The Chernobyl disaster was an accident at the Chernobyl Nuclear Power Plant on April 26, 1986 at 01:23
+            a.m., consisting of an explosion at the plant and subsequent.
+          </p>
+          <p class="author_text">
+            John Kamman
+          </p>
+          <p class="italic_text">
+            Wholesum Founder
+          </p>
+        </div>
+
+        <div class="selected">
+          <img class="icon" src="/assets/images/priroda_peizaj.jpg">
+          <p class="many_text">
+            The Chernobyl disaster was an accident at the Chernobyl Nuclear Power Plant on April 26, 1986 at 01:23 a.m.,
+            consisting of an explosion at the plant and subsequent radioactive contamination of the surrounding
+            geographic
+            area.The Chernobyl disaster was an accident at the Chernobyl Nuclear Power Plant on April 26, 1986 at 01:23
+            a.m., consisting of an explosion at the plant and subsequent.
+          </p>
+          <p class="author_text">
+            John Kamman
+          </p>
+          <p class="italic_text">
+            Wholesum Founder
+          </p>
+        </div>
+
+        <div class="next">
+          <img class="icon" src="/assets/images/14fd113eac8b7e6f9381b2653e4badf1.jpg">
+          <p class="many_text">
+            The Chernobyl disaster was an accident at the Chernobyl Nuclear Power Plant on April 26, 1986 at 01:23 a.m.,
+            consisting of an explosion at the plant and subsequent radioactive contamination of the surrounding
+            geographic
+            area.The Chernobyl disaster was an accident at the Chernobyl Nuclear Power Plant on April 26, 1986 at 01:23
+            a.m., consisting of an explosion at the plant and subsequent.
+          </p>
+          <p class="author_text">
+            John Kamman
+          </p>
+          <p class="italic_text">
+            Wholesum Founder
+          </p>
+        </div>
+
+      </div>
+
+
+      <button id="next" onclick='next()'>→</button>
+
+    </div>
+    <!--Slider-->
+  </div>
+  <div class="footer">
+    <div class="footer1">
+      <img style="height: 100px;width: 100px;" src="assets/images/dark_logo.png">
+      <div class="links">
+        <p>ABOUT US</p>
+        <p>TERM OF SERVICE</p>
+        <p>PRIVACY POLICY</p>
+        <p>CONTACT US</p>
+      </div>
+    </div>
+    <div class="footer2">
+        <p style="text-align: center; color: white;">©2018 Find Parrot</p>
+    </div>
   </div>
 </body>
 

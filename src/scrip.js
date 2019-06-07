@@ -1,4 +1,3 @@
-
 function next(){ 
     var selecteder = document.getElementsByClassName("selected");
     //var selected = document.getElementById("item1");
@@ -16,7 +15,7 @@ function next(){
     next.classList.add('selected');
     selected.classList.remove("selected");
     selected.classList.add('prev');
-    document.getElementById("next").disabled = true;
+    document.getElementById("next").style.visibility = "hidden"
     }
     else{
     var nextSecond = next.nextElementSibling;
@@ -26,7 +25,7 @@ function next(){
     next.classList.add('selected');
     selected.classList.remove("selected");
     selected.classList.add('prev');
-    document.getElementById("prev").disabled = false;
+    document.getElementById("prev").style.visibility = "visible";
     }
 }
 function prev(){
@@ -48,7 +47,7 @@ function prev(){
     next.classList.add('nextRightSecond');
     selected.classList.remove("selected");
     selected.classList.add('next');
-    document.getElementById("prev").disabled = true;
+    document.getElementById("prev").style.visibility = "hidden";
     }
     else{        
         var prevSecond = prev.previousElementSibling;
@@ -58,6 +57,6 @@ function prev(){
         prevSecond.classList.add("prev");
         selected.classList.remove("selected");
         selected.classList.add('next');
-        document.getElementById("next").disabled = false;
+        document.getElementById("next").style.visibility = "visible";
         }
 }

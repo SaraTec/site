@@ -1,25 +1,48 @@
 html, body, main{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+ 
 }
 #carousel{
-  position: relative;
+ 
   height: 400px;
   top: 50%;
-  transform: translateY(-50%);
   overflow: hidden;
+  
+  padding: 50px;
+
 }
-  div{
+#carousel div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
-    opacity: 1;
+    border-radius: 15%;
+    
 }
-    img{
-      width: 400px;
-      transition: width 1s;
-    }
+.selected .icon{
+  border-radius: 50%; 
+  height: 80px;
+  width: 80px;
+  margin-top: -20px;
+  border: 4px solid #fff;
+
+}
+.next .icon{
+  border-radius: 50%; 
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+  border: 2px solid #fff;
+
+}
+.prev .icon{
+  border-radius: 50%; 
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+  border: 2px solid #fff;
+
+}
     .hideLeft{
       left: 0%;
       opacity: 0;
@@ -40,61 +63,49 @@ html, body, main{
     .prev{
       z-index: 5;
       left: 30%;
+      opacity: .8;
       transform: translateY(50px) translateX(-50%);
-      width: 400px;
+      width: 15%;
       height: 200px;
-      background-color: red;
+      background-color: white;
     }
-      /*.prev img{
-        width: 300px;
-    }*/
     .prevLeftSecond
     {
-      width: 200px;
-      height: 100px;
-      background-color: red;
-      z-index: 4;
-      left: 15%;
-      transform: translateY(50%) translateX(-50%);
-      opacity: .7;
+      visibility:  hidden;
     }
       .prevLeftSecond img
       {
         width: 200px;
     }
+    
     .selected
     {
+
       z-index: 10;
       left: 50%;
       transform: translateY(0px) translateX(-50%);
-      width: 600px;
+      width: 30%;
       height: 300px;
-      background-color: red;
+      background-color: white;
+      padding-bottom: 2%;
     }
     .next
     {
       width: 300px;
       z-index: 5;
+      opacity: .8;
       left: 70%;
       transform: translateY(50px) translateX(-50%);
-      width: 400px;
+      width: 15%;
       height: 200px;
-      background-color: red;
+      background-color: white;
+      
     }
-     /* .next  img{
-        width: 300px;
-    }*/
     .nextRightSecond
     {
-      z-index: 4;
-      left: 85%;
-      transform: translateY(50%) translateX(-50%);
-      opacity: .7;
-      width: 200px;
-      height: 100px;
-      background-color: red;}
-      .nextRightSecond img{
-        width: 200px;
+      overflow: auto;
+      visibility:  hidden;
+      height: 1px;
     }
 .buttons
 {
@@ -102,4 +113,96 @@ html, body, main{
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
+}
+/*вся ібанина з текстатим*/
+.selected .many_text{
+  width: 80%;
+  overflow: auto;
+  text-align: center;
+  font-size: 100%;
+}
+.next .many_text{
+  width: 80%;
+  font-size: 50%;
+  overflow: auto;
+  text-align: center;
+  
+}
+.prev .many_text{
+  width: 80%;
+  font-size: 50%;
+  overflow: auto;
+  text-align: center;
+  
+}
+.selected .author_text{
+  width: 80%;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  color: #00afbd;
+  margin-bottom: 1%;
+}
+.selected .italic_text{
+  width: 80%;
+  text-align: center;
+  font-size: 100%;
+  margin: 0;
+  font-style: italic;
+}
+.next .author_text{
+  width: 80%;
+  text-align: center;
+  font-size: 50%;
+  font-weight: bold;
+  color: #00afbd;
+  margin-bottom: 1%;
+}
+.next .italic_text{
+  width: 80%;
+  text-align: center;
+  font-size: 50%;
+  margin: 0;
+  font-style: italic;
+}
+.prev .author_text{
+  width: 80%;
+  text-align: center;
+  font-size: 50%;
+  font-weight: bold;
+  color: #00afbd;
+  margin-bottom: 1%;
+}
+.prev .italic_text{
+  width: 80%;
+  text-align: center;
+  font-size: 50%;
+  margin: 0;
+  font-style: italic;
+}
+.footer1
+{
+  background-color:#323232; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.footer1 .links{
+  flex-wrap: wrap;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer1 .links p{
+  font-size: 15px;
+  margin: 20px;
+  color: white;
+}
+.footer2{
+  font-size:12px; 
+  padding: 10px;
+  background-color: #272727;
 }
