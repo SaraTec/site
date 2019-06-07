@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./styles_smal.css">
   <link rel="stylesheet" href="./styles_carusel.css">
   <link rel="stylesheet" href="./styles_burger.css">
-
   <script src="/scrip.js"></script>
 </head>
 
@@ -49,10 +48,15 @@
       </p>
 
       <div class="searcher">
-        <label class="drop"></label>
+        <label class="drop" onclick="drop()"><p id = "categoty">Category ▼</p></label>
         <input type="text" name="search">
-        <button class="start_search">START SERCHING</button>
-        
+        <button class="start_search" onclick="drop()">START SERCHING</button>
+        <div class="drop-box">
+            <a href="#">ALL PRODUCTS</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">LOG IN</a>
+            <a href="#">GIGN UP</a>
+        </div>
       </div>
     </div>
     <div class="down">

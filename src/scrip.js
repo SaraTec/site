@@ -28,6 +28,26 @@ function next(){
     document.getElementById("prev").style.visibility = "visible";
     }
 }
+var cheked = 0;
+function drop()
+{
+    if(cheked==0){
+    var selecteder = document.getElementsByClassName("drop-box");
+    var selected = selecteder[0];
+    selected.style.visibility = "visible";
+    var categoty = document.getElementById("categoty");
+    categoty.innerHTML = "Category ▲";
+    cheked = 1;
+}
+else{
+    var selecteder = document.getElementsByClassName("drop-box");
+    var selected = selecteder[0];
+    selected.style.visibility = "hidden";
+    cheked = 0;
+    var categoty = document.getElementById("categoty");
+    categoty.innerHTML = "Category ▼";
+}
+}
 function prev(){
     var selecteder = document.getElementsByClassName("selected");
     //var selected = document.getElementById("item1");

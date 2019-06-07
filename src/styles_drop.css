@@ -1,18 +1,27 @@
-.drop{
-    margin: 100px auto;
-    width: 320px;
-    background-color: #000;
-    position: relative;
+
+.drop{    
+    
+    background-color:rgb(230,230,230);
     color: white;
     text-align: center;
-    height: 40px;
+    height: 50px;
     font-family: 'Arial';
+    
+    z-index: 100;
+    position: fixed;
+    top: 0;
+      width: 100%;
 }
 
 .drop #check-menu{
     display: none;
 }
-
+.logo_burger{
+  margin-left: 5%;
+  overflow: auto;
+  height: 50px !important;
+  width: 133px !important;
+}
 .drop label{
     display: block;
     position: absolute;
@@ -56,37 +65,37 @@
     transition: .5s all;
 }
 
-.drop .dropa{
+.drop a{
     display: block;
     width: 100%;
     padding: 10px;
-    color: white;
+    color: black;
     text-decoration: none;
     border-top: 1px solid rgba(255,255,255,.3);
-    background-color: #000;
+    background-color: rgb(230,230,230);
 }
 
-.drop a:hover{
-    background-color: rgba(0,0,0,.9);
+a:hover{
+    background-color: rgba(255, 255, 255, 0.596);
 }
 
-.drop #check-menu:checked ~ .main-menu{
+#check-menu:checked ~ .main-menu{
     max-height: 500px;
     font-size: 16px;
 }
 
-.drop #check-menu:checked ~ .first{
+#check-menu:checked ~ .first{
     display: none;
 }
 
-.drop #check-menu:checked ~ .second{
+#check-menu:checked ~ .second{
     transform: rotate(45deg);
 }
 
-.drop #check-menu:checked ~ .third{
+#check-menu:checked ~ .third{
     transform: rotate(-45deg);
 }
 
-.drop #check-menu:checked ~ .fourth{
+#check-menu:checked ~ .fourth{
     display: none;
 }
